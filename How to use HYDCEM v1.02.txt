@@ -37,7 +37,7 @@ IPhreeqc is needed to couple C# with PHREEQC
 https://github.com/BrucieHolmes/HYDCEMv4.0_Executable
 
 4. Download the GitHub Repository by opening <Code> (green button) and clicking 'Download to Zip'.
-Save the *.zip folder on your PC.
+Save/extract the *.zip folder on your PC.
 
 5. Double-click on the setup.exe file to open the HYDCEM front end
 Install the software and the HYDCEM application will be installed as a program (HYDCEMv4_WinPrototype) on your PC.
