@@ -7,14 +7,19 @@
 ------------------------------
 INTRODUCTION
 ------------------------------
-HYDCEM (HYDration of CEMent) is a free-to-use software to simulate the hydration of various cements and cement-blends using a coupled C# and PHREEQC model.
+HYDCEM (HYDration of CEMent) is a free-to-use software to simulate the hydration of various cements and cement-blends 
+using a coupled C# and PHREEQC model.
 
 C# is a object orientated language within the .NET Fraework in Microsoft
-PHREEQC [1] (pronunced freek C) is an ion-pairing model performing geochemical predictions between solids, liquids and gases at equilibrium.
+PHREEQC [1] (pronunced freek C) is an ion-pairing model performing geochemical predictions between solids, liquids and 
+gases at equilibrium.
 
-The software provides templates for the analysis of cement while hydrating over time, by replacement or concentration and employes the CEMDATA 18 [2] thermodynamic database.
+The software provides templates for the analysis of cement while hydrating over time, by replacement or concentration and 
+employes the CEMDATA 18 [2] thermodynamic database.
 
-Users decide 1) which analysis they wish to run, 2) input the oxide composition of the cement (and fly-ash and slag as required), 3) set the water-cement (w/c) ratio, curing temperature and Blaine fineness, 4) which output is required (graphical and/or tabular) and 5) where to save the results.
+Users decide 1) which analysis they wish to run, 2) input the oxide composition of the cement (and fly-ash and slag as required), 
+3) set the water-cement (w/c) ratio, curing temperature and Blaine fineness, 4) which output is required (graphical and/or tabular) 
+and 5) where to save the results.
 
 Details on the various analysis can be found in [3-7].
 
@@ -57,7 +62,8 @@ HOW TO UNDERTAKE AN ANALYSIS
 
 5. Under 'File Locations', the default location for the cemdata18.dat database is C:\phreeqc\database (see step 6 above).
 
-6. Under 'File Locations', click the 'Select folder' to save the output, which will include the PHREEQC input file and spreadsheet (if selected), into the Data folder in the *.zip folder downloaded to your PC.
+6. Under 'File Locations', click the 'Select folder' to save the output, which will include the PHREEQC input file and 
+spreadsheet (if selected), into the Data folder in the *.zip folder downloaded to your PC.
 
 7. Click RUN to start the analysis.
 The PHREEQC Input file and spreadsheet (if selected) will be saved in the Data folder.
@@ -71,10 +77,17 @@ Please provide any constructive feedback to Dr Niall Holmes (niall.holmes@tudubl
 ------------------------------
 REFERENCES
 ------------------------------
-[1] D.L. Parkhust, C.A.J. Appelo. A computer program for speciation, batch - reaction, one - dimensional transport and inverse geochemical calculations. 1999, USGS.
-[2] B. Lothenbach, et al., Cemdata18: A chemical thermodynamic database for hydrated Portland cements and alkali-activated materials, Cem. Concr. Res. 115 (2019) 472–506.
-[3] Holmes, N., Tyrer, M., Kelliher, D. (2022) Predicting Chemical Shrinkage in Hydrating Cements, Buildings 2022, 12, 1972. https://doi.org/10.3390/buildings12111972
-[4] Holmes, N., Russell, M., Davis, G. & Tyrer, M. (2022) Comparing the Measured and Thermodynamically Predicted AFm Phases in a Hydrating Cement. Appl. Sci. 12, 10147. https://doi.org/10.3390/app121910147
-[5] Holmes, N., Tyrer, M. & Kelliher, D. (2022) Employing Discrete Solid Phases to Represent C-S-H Solid Solutions in the Cemdata07 Thermodynamic Database to Model Cement Hydration Using the PHREEQC Geochemical Software, Appl. Sci. 2022, 12, 10039. https://doi.org/10.3390/app121910039
-[6] Holmes, N., Tyrer, M., Kelliher, D. (2023) Thermodynamic Modelling of Harsh Environments on the Solid Phase Assemblage of Hydrating Cements Using PHREEQC. Appl. Sci. 13, 135. https://doi.org/10.3390/app13010135
-[7] Holmes, N, Walker, C. Tyrer, M. & Kelliher, D (2022) Deriving discrete solid phases from CSH-3T and CSHQ end-members to model cement hydration in PHREEQC, Civil Engineering Research in Ireland (CERI) conference, Dublin, 25-26 August, pp. 28-33
+[1] D.L. Parkhust, C.A.J. Appelo. A computer program for speciation, batch - reaction, one - dimensional transport and inverse 
+geochemical calculations. 1999, USGS.
+[2] B. Lothenbach, et al., Cemdata18: A chemical thermodynamic database for hydrated Portland cements and alkali-activated materials, 
+Cem. Concr. Res. 115 (2019) 472–506.
+[3] Holmes, N., Tyrer, M., Kelliher, D. (2022) Predicting Chemical Shrinkage in Hydrating Cements, Buildings 2022, 12, 1972. 
+https://doi.org/10.3390/buildings12111972
+[4] Holmes, N., Russell, M., Davis, G. & Tyrer, M. (2022) Comparing the Measured and Thermodynamically Predicted AFm Phases in a 
+Hydrating Cement. Appl. Sci. 12, 10147. https://doi.org/10.3390/app121910147
+[5] Holmes, N., Tyrer, M. & Kelliher, D. (2022) Employing Discrete Solid Phases to Represent C-S-H Solid Solutions in the Cemdata07 
+Thermodynamic Database to Model Cement Hydration Using the PHREEQC Geochemical Software, Appl. Sci. 2022, 12, 10039. https://doi.org/10.3390/app121910039
+[6] Holmes, N., Tyrer, M., Kelliher, D. (2023) Thermodynamic Modelling of Harsh Environments on the Solid Phase Assemblage of 
+Hydrating Cements Using PHREEQC. Appl. Sci. 13, 135. https://doi.org/10.3390/app13010135
+[7] Holmes, N, Walker, C. Tyrer, M. & Kelliher, D (2022) Deriving discrete solid phases from CSH-3T and CSHQ end-members to model 
+cement hydration in PHREEQC, Civil Engineering Research in Ireland (CERI) conference, Dublin, 25-26 August, pp. 28-33
