@@ -10,15 +10,11 @@ INTRODUCTION
 HYDCEM (HYDration of CEMent) is a free-to-use software to simulate the hydration of various cements and cement-blends using a coupled C# and PHREEQC model.
 
 C# is a object orientated language within the .NET Fraework in Microsoft
-PHREEQC [1] (pronunced freek C) is an ion-pairing model written used to perform geochemical predictions between solids, liquids and gases at equilibrium.
+PHREEQC [1] (pronunced freek C) is an ion-pairing model performing geochemical predictions between solids, liquids and gases at equilibrium.
 
 The software provides templates for the analysis of cement while hydrating over time, by replacement or concentration and employes the CEMDATA 18 [2] thermodynamic database.
-Only the front-end of HYDCEM, a C# form, will be visible to users.
 
-Users simply decide 1) which analysis they wish to run, 2) input the oxide composition of the cement (and fly-ash and slag as required), 3) set the water-cement (w/c) ratio, curing temperature and Blaine fineness, 4) which output
-is required (graphical and/or tabular) and 5) where to save the results.
-
-HYDCEM is available by opening the executable on GitHub.
+Users decide 1) which analysis they wish to run, 2) input the oxide composition of the cement (and fly-ash and slag as required), 3) set the water-cement (w/c) ratio, curing temperature and Blaine fineness, 4) which output is required (graphical and/or tabular) and 5) where to save the results.
 
 Details on the various analysis can be found in [3-7].
 
@@ -43,21 +39,28 @@ Save/extract the *.zip folder on your PC.
 Install the software and the HYDCEM application will be installed as a program (HYDCEMv4_WinPrototype) on your PC.
 If you receice a 'Windows protected your PC' warning, select 'More info' and 'Run Anyway'.
 
+6. Copy the cemdata18.dat file and paste into the C:\phreeqc\database folder created after installing PHREEQC.
+This is the default file location for the cemdata18 thermodynamic database required to run the analysis
 
 ------------------------------
 HOW TO UNDERTAKE AN ANALYSIS
 ------------------------------
 1. Starting from the left of the front end, select the analysis type (only one a time can be selected)
+
 2. Input the oxide proportions of the cement/CSC
    2.1 If undertaking seawater, sulfate or a quaternary/LC3 analysis, input the required information.
    2.2 If undertaking a fly-ash or slag analysis, input the oxide proportions of the SCM.
+
 3. Input the w/c ratio (0.5, 0.65, etc), temperature (in degrees C) and cement Blaine fineness (in m2/kg).
+
 4. Select which output(s) and format(s) is required (graphical or tabular (Excel sopreadsheet)).
-5. Under 'File Locations', there is no need to find the cemdata18.dat database if you installed PHREEQC into the c:\ and added it to the databased folder (this is the default location for the cemdata18.dat database, as shown)
+
+5. Under 'File Locations', the default location for the cemdata18.dat database is C:\phreeqc\database (see step 6 above).
+
 6. Under 'File Locations', click the 'Select folder' to save the output, which will include the PHREEQC input file and spreadsheet (if selected), into the Data folder in the *.zip folder downloaded to your PC.
+
 7. Click RUN to start the analysis.
 The PHREEQC Input file and spreadsheet (if selected) will be saved in the Data folder.
-
 Provided all necessary inputs are correct, the analysis will begin immediately.
 
 ------------------------------
@@ -75,8 +78,3 @@ REFERENCES
 [5] Holmes, N., Tyrer, M. & Kelliher, D. (2022) Employing Discrete Solid Phases to Represent C-S-H Solid Solutions in the Cemdata07 Thermodynamic Database to Model Cement Hydration Using the PHREEQC Geochemical Software, Appl. Sci. 2022, 12, 10039. https://doi.org/10.3390/app121910039
 [6] Holmes, N., Tyrer, M., Kelliher, D. (2023) Thermodynamic Modelling of Harsh Environments on the Solid Phase Assemblage of Hydrating Cements Using PHREEQC. Appl. Sci. 13, 135. https://doi.org/10.3390/app13010135
 [7] Holmes, N, Walker, C. Tyrer, M. & Kelliher, D (2022) Deriving discrete solid phases from CSH-3T and CSHQ end-members to model cement hydration in PHREEQC, Civil Engineering Research in Ireland (CERI) conference, Dublin, 25-26 August, pp. 28-33
-
-
-
-
-
